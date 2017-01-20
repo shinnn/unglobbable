@@ -1,0 +1,33 @@
+{
+  "name": "unglobbable",
+  "version": "1.0.0",
+  "description": "A glob pattern that lets node-glob emit an error",
+  "repository": "shinnn/unglobbable",
+  "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+  "scripts": {
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
+    "test": "node --throw-deprecation test.js"
+  },
+  "license": "CC0-1.0",
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "path",
+    "pattern",
+    "glob",
+    "unglobbable",
+    "failure",
+    "error",
+    "eperm",
+    "eacces"
+  ],
+  "devDependencies": {
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.14.1",
+    "glob": "^7.1.1"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
+  }
+}

@@ -1,0 +1,9 @@
+dist: trusty
+os:
+  - linux
+  - osx
+osx_image: xcode8.2
+branches:
+  except: /^v\d/
+language: node_js
+node_js: node
