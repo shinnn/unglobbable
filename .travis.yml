@@ -2,7 +2,7 @@ dist: trusty
 os:
   - linux
   - osx
-osx_image: xcode8.2
+osx_image: xcode8.3
 branches:
   except: /^v\d/
 language: node_js
