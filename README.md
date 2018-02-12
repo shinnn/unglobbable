@@ -1,6 +1,6 @@
 # unglobbable
 
-[![NPM version](https://img.shields.io/npm/v/unglobbable.svg)](https://www.npmjs.com/package/unglobbable)
+[![npm version](https://img.shields.io/npm/v/unglobbable.svg)](https://www.npmjs.com/package/unglobbable)
 [![Build Status](https://travis-ci.org/shinnn/unglobbable.svg?branch=master)](https://travis-ci.org/shinnn/unglobbable)
 [![Build status](https://ci.appveyor.com/api/projects/status/c0m0dun37maxu9yj/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/unglobbable/branch/master)
 
@@ -19,11 +19,11 @@ glob(unglobbable, err => {
 });
 ```
 
-Useful for writing the failure test case. [Example](https://github.com/shinnn/glob-observable/blob/f1f560de7977aba02463e36b5c69d2fb1305d8a8/test.js#L125)
+Useful for writing the failure test case. [Example](https://github.com/shinnn/glob-observable/blob/084a9ece8437d84fbeb9d1a5c758f20a86c44306/test.js#L126)
 
 ## Installation
 
-[Use npm.](https://docs.npmjs.com/cli/install)
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
 
 ```
 npm install unglobbable
@@ -37,7 +37,7 @@ const unglobbable = require('unglobbable');
 
 ### unglobbable
 
-Value: `String` of the following:
+Value: `string` of the following:
 
 | Platform | String                      |
 |:---------|:----------------------------|
@@ -60,4 +60,4 @@ glob(unglobbable, err => {
 
 ## License
 
-[Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/deed)
+[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
