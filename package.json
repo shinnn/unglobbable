@@ -1,6 +1,6 @@
 {
 	"name": "unglobbable",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A glob pattern that lets node-glob emit an error",
 	"repository": "shinnn/unglobbable",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
