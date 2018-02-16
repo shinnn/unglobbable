@@ -6,7 +6,7 @@
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
 	"scripts": {
 		"pretest": "eslint --fix --format=codeframe .",
-		"test": "node --throw-deprecation test.js"
+		"test": "node test.js"
 	},
 	"license": "ISC",
 	"files": [
@@ -25,7 +25,9 @@
 	"devDependencies": {
 		"@shinnn/eslint-config-node": "^5.0.0",
 		"eslint": "^4.17.0",
-		"glob": "^7.1.2"
+		"fast-glob": "^2.0.4",
+		"glob": "^7.1.2",
+		"tape": "^4.8.0"
 	},
 	"eslintConfig": {
 		"extends": "@shinnn/node"

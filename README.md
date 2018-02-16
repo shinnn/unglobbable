@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/shinnn/unglobbable.svg?branch=master)](https://travis-ci.org/shinnn/unglobbable)
 [![Build status](https://ci.appveyor.com/api/projects/status/c0m0dun37maxu9yj/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/unglobbable/branch/master)
 
-A glob pattern that lets [node-glob](https://github.com/isaacs/node-glob) emit an error
+A glob pattern that lets [node-glob](https://github.com/isaacs/node-glob) and [fast-glob](https://github.com/mrmlnc/fast-glob) emit an error
 
 ```javascript
 const glob = require('glob');
@@ -51,6 +51,7 @@ Value: `string` of the following:
 const glob = require('glob');
 const unglobbable = require('unglobbable');
 
+process.platform; //=> 'darwin'
 unglobbable; //=> '/private/var/root/*'
 
 glob(unglobbable, err => {
