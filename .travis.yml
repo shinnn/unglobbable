@@ -1,8 +1,10 @@
-os:
-  - linux
-  - osx
-osx_image: xcode9.3beta
 branches:
   except: /^v\d/
 language: node_js
 node_js: node
+matrix:
+  include:
+  - dist: xenial
+  - os: osx
+    osx_image: xcode9.3beta
+    script: node test.js
