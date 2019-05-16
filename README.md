@@ -1,8 +1,7 @@
 # unglobbable
 
 [![npm version](https://img.shields.io/npm/v/unglobbable.svg)](https://www.npmjs.com/package/unglobbable)
-[![Build Status](https://travis-ci.org/shinnn/unglobbable.svg?branch=master)](https://travis-ci.org/shinnn/unglobbable)
-[![Build status](https://ci.appveyor.com/api/projects/status/c0m0dun37maxu9yj/branch/master?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/unglobbable/branch/master)
+[![Build Status](https://travis-ci.com/shinnn/unglobbable.svg?branch=master)](https://travis-ci.com/shinnn/unglobbable)
 
 A glob pattern that lets [node-glob](https://github.com/isaacs/node-glob) and [fast-glob](https://github.com/mrmlnc/fast-glob) emit an error
 
@@ -23,7 +22,7 @@ Useful for writing the failure test case. [Example](https://github.com/shinnn/gl
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/getting-started/what-is-npm).
+[Use](https://docs.npmjs.com/cli/install) [npm]https://docs.npmjs.com/about-npm/).
 
 ```
 npm install unglobbable
@@ -32,7 +31,7 @@ npm install unglobbable
 ## API
 
 ```javascript
-const unglobbable = require('unglobbable');
+import unglobbable from 'unglobbable';
 ```
 
 ### unglobbable
@@ -48,11 +47,8 @@ Value: `string` of the following:
 
 ```javascript
 // On macOS
-const glob = require('glob');
-const unglobbable = require('unglobbable');
-
-process.platform; //=> 'darwin'
-unglobbable; //=> '/private/var/root/*'
+import glob from 'glob';
+import unglobbable from 'unglobbable'; //=> '/private/var/root/*'
 
 glob(unglobbable, err => {
   err.message; //=> 'EACCES: permission denied, scandir '/private/var/root''
@@ -61,4 +57,4 @@ glob(unglobbable, err => {
 
 ## License
 
-[ISC License](./LICENSE) © 2018 Shinnosuke Watanabe
+[ISC License](./LICENSE) © 2018 - 2019 Watanabe Shinnosuke

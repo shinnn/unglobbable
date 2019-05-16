@@ -2,9 +2,11 @@ branches:
   except: /^v\d/
 language: node_js
 node_js: node
-matrix:
+jobs:
   include:
   - dist: xenial
   - os: osx
     osx_image: xcode10.1
+    script: node test.js
+  - os: windows
     script: node test.js
