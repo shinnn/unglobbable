@@ -22,7 +22,7 @@ Useful for writing the failure test case. [Example](https://github.com/shinnn/gl
 
 ## Installation
 
-[Use](https://docs.npmjs.com/cli/install) [npm]https://docs.npmjs.com/about-npm/).
+[Use](https://docs.npmjs.com/cli/install) [npm](https://docs.npmjs.com/about-npm/).
 
 ```
 npm install unglobbable
